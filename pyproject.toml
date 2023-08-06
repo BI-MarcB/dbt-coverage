@@ -34,6 +34,8 @@ tomli = { version = "*", python = "^3.7" }  # Needed for a successful resolution
 typing-extensions = { version = "*", python = "^3.7" }  # Needed for a successful resolution of tox's transitive dependencies
 colorama = { version = "*", python = "^3.7" }  # Needed for a successful resolution of tox's transitive dependencies
 
+# Needed for running tests locally
+[tool.poetry.group.test.dependencies]
 pytest = "^7"
 pytest-docker = "^2"
 
